@@ -14,7 +14,7 @@ function App() {
         setLoading(true);
         try {
             const currentCursor = reset ? null : cursor;
-            const url = new URL('https://product-catalog-w1qo.onrender.com');
+            const url = new URL('https://product-catalog-w1qo.onrender.com/products');
             url.searchParams.append('limit', 20);
             if (currentCursor) url.searchParams.append('cursor', currentCursor);
             if (category) url.searchParams.append('category', category);

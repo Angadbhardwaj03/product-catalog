@@ -96,6 +96,7 @@ Instead of skipping X items, you tell the database precisely where to start: "Gi
 2. **Backend:** Deploy on [Render](https://render.com) as a "Web Service". Supply your `.env` variables and set Start Command to `node server.js`.
 3. **Frontend:** Deploy on Render or Vercel. Ensure you change the API URL inside `App.jsx` to match your deployed Render backend domain.
 
+## live demo : https://product-catalog-1-xqsa.onrender.com
 ## Future Improvements
 - Redis caching for high traffic loads.
 - JWT-based Auth.

@@ -14,7 +14,8 @@ function App() {
         setLoading(true);
         try {
             const currentCursor = reset ? null : cursor;
-            const url = new URL('https://product-catalog-w1qo.onrender.com/products');
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000/products';
+            const url = new URL(apiUrl);
             url.searchParams.append('limit', 20);
             if (currentCursor) url.searchParams.append('cursor', currentCursor);
             if (category) url.searchParams.append('category', category);
